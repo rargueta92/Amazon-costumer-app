@@ -1,0 +1,16 @@
+DROP DATABASE IF EXISTS amazon_DB;
+
+CREATE DATABASE amazon_DB;
+
+USE amazon_DB;
+
+CREATE TABLE products (
+itemID INT NOT NULL AUTO_INCREMENT,
+productName VARCHAR(40) NULL,
+departmentName VARCHAR(40) NULL,
+price DECIMAL(10,4) NULL,
+stockQuantity INTEGER NOT NULL,
+PRIMARY KEY(itemID)
+);
+
+SELECT * FROM products;
